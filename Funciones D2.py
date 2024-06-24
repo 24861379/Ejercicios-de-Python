@@ -37,8 +37,32 @@ print('First name:', first_name)
 print('First name length:', len(first_name))
 print('Last name: ', last_name)
 print('Last name length: ', len(last_name))
-print('Country: ', country)
+#print('Country: ', country)
 print('Age: ', age)
 print('Married: ', is_Married)
 print('Skills: ', skills)
 print('Person information: ', person_info)
+
+#tipos de datos
+ #Convertir int a float 
+numero= 10 
+print('el numero es: ', numero)# --> 10
+
+num_float = float(numero)
+print('numero decimal', num_float)# --> 10.0
+
+#float a int
+gravedad = 9.81
+print(int(gravedad)) #-->9
+
+#int a str
+num_int= 10
+print(num_int) #-->10
+num_Str = str(num_int)
+print(num_Str) #-->'10'
+
+#str a una lista
+primer_nombre='Alejo'
+print(primer_nombre) #-->'Alejo'
+primer_nombre_a_una_Lista= list(first_name) 
+print(primer_nombre_a_una_Lista) #['A','l','e','j','o']
