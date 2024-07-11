@@ -67,4 +67,46 @@ frutas.pop(0)
 print(frutas)
 
 #eliminar elementos con del
+print('***Usando \'del\' para eliminar elementos.***')
+print(vegetales)
+del vegetales[3] #cuando a del se le especifica el indice del elemento elimina el elemento
+print(vegetales)
+del vegetales[1]
+print(vegetales)
+#cuando no le especificamos el indice del elimina toda la lista
+#del vegetales #--> esto devuelve: NameError: name 'vegateles' is not defined
+#print(vegetales)  
+
+#Borrar elementos con clear()
+print('***Usando el método  \'clear()\' para eliminar elementos.***'.upper())
+animal_products.clear()
+print(animal_products)
+
+#Copiar una lista
+print('***Usando el método  \'copy()\' para copiar una lista.***'.upper())
+web_techs_copia = web_techs.copy()
+print(web_techs_copia)
+
+#UNIR LISTAS
+print('***Usando \'concatenacion y el método extend()\' para unir listas.***'.upper())
+vector= [1, 2, 3]
+vec_cero=[0]
+vector2 = [-3, -2,-1]
+
+Concatenar= vector2 + vec_cero+ vector
+print(Concatenar)
+web_techs_copia.extend(frutas)
+print(web_techs_copia)
+
+#Contar la cantidad de elementos de una lista
+print('***Usando \'el método count()\' para contar la cantidad de un elemento en las listas.***'.upper()) 
+edades = [14, 30, 15, 14, 60, 20, 20, 20, 20, 34]
+print(edades.count(20))
+
+#invertir una lista
+print('***Usando \'el método reverse()\' para invertir una lista.***'.upper()) 
+web_techs.reverse()
+print(web_techs)
+
+
 
